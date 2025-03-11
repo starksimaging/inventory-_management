@@ -1,5 +1,6 @@
 {% extends 'invApp/layout.html' %}
 
+{% load static %}
 {% block content %}
    <h1 class="text-center">Products</h1>
    <table class="table table-bordered tabel-stripped">
@@ -33,4 +34,6 @@
         {% endfor %}
      </tbody>
    </table>
+
+   <img src="{% static 'images/house.jpg' %}" alt="A beuatiful house" >
 {% endblock %}
