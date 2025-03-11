@@ -25,7 +25,8 @@
                 <td>{{product.quantity}}</td>
                 <td>{{product.supplier}}</td>
                 <td>
-                    <a href="{% url 'product_update' product.product_id %}" class="btn btn-primary btn-sm">Edit</a>
+                    <a href="{% url 'product_update' product.product_id %}" class="btn btn-primary btn-sm">Update</a>
+                    <a href="{% url 'product_delete' product.product_id %}" class="btn btn-danger btn-sm">Delete</a>
                    
                 </td>
             </tr>
