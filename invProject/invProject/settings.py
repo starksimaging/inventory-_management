@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'invProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',  # Your PostgreSQL database name
+        'USER': 'jonstarks',  # Your PostgreSQL username
+        'PASSWORD': 'root',   # Your PostgreSQL password
+        'HOST': 'localhost',  # Keep localhost for local setup
+        'PORT': '5432',       # Default PostgreSQL port
     }
 }
 
